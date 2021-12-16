@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Meme Generator</title>
+  </head>
+  <body onload="onInit()">
+    <!-- SCREEN -->
+    <div class="main-screen" onclick=""></div>
+
+    <!-- HEADER -->
+
+    <header class="main-header">
+      <div class="header-container main-layout flex align-center space-between">
+        <a href="" class="logo">meme generator</a>
+        <ul class="main-nav clean-list flex">
+          <li>
+            <a href="#" onclick="" class="current gallery-nav">Gallery</a>
+          </li>
+          <li>
+            <a href="#" onclick="">Memes</a>
+          </li>
+          <li>
+            <a href="#" onclick="">About</a>
+          </li>
+        </ul>
+        <button class="menu-btn" onclick="">☰</button>
+      </div>
+    </header>
+<main>
+
+    <!-- GALLERY -->
+    <div class="gallery-container main-layout">
+        <div class="search-container flex  align-center space-between">
+          <input
+            type="search"
+            class="search-input"
+            oninput="onSearchClick(this)"
+            placeholder="Search"
+            list="category-list"
+          />
+          
+          <datalist id="category-list"></datalist>
+          <div class="search-keywords"></div>
+        </div>
+        <div class="gallery"></div>
+        </div>
+        
+    
+    </main>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+    
+
+    
+    <script src="/js/services/utils.service.js"></script>
+    <script src="/js/services/storage.service.js"></script>
+    <script src="/js/services/gallery.service.js"></script>
+    <script src="/js/meme.controller.js"></script>
+    <script src="/js/app.controller.js"></script>
+  </body>
+</html>
